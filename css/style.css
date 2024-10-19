@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(144, 235, 174));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 12px;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 955px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    height: 60vh;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f8f9fa; /* Light background for chat area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a modern touch */
+    margin-bottom: 23px;
+}
+
+.message {
+    background-color: grey;
+    color: white;
+    width: fit-content; /* Adjust to content size */
+    max-width: 60%; /* Limit message width */
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for message pop */
+    word-wrap: break-word; /* Handle long words */
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 10px 0; 
+    border-radius: 10px;
+
+}
+
+#messageInp {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 34px;
+    font-size: 16px; /* Improve readability */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#messageInp:focus {
+    border-color: #17a2b8; /* Change border color on focus */
+}
+
+.btn {
+    width: 10%; /* Slightly increase button size */
+    height: 34px;
+    margin-left: 10px; /* Add space between input and button */
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838; /* Darken on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+}
